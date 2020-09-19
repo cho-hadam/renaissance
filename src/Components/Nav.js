@@ -19,10 +19,12 @@ class Nav extends React.Component {
       const menu = event.target.innerText;
       let color = "white";
       let backgroundColor = "OrangeBack";
+
       if (menu == "List") {
         color = "black";
         backgroundColor = "WhiteBack";
       }
+
       this.setState({
         color: color,
         currentMenu: menu,
@@ -45,6 +47,8 @@ class Nav extends React.Component {
                 color: color,
               };
             }
+
+            // Link to not working
             return (
               <li key={index}>
                 <Link to={`/${menu}`} style={colorStyle} onClick={_clickHandle}>
