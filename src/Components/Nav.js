@@ -2,27 +2,27 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "../css/nav.css";
 
+const menus = ["Home", "Game", "Rank", "List"];
+
 class Nav extends React.Component {
+  state = {
+    currentMenu: this.props.menu,
+  };
   render() {
-    const menuStyle = {
+    const textColor = {
       color: this.props.textColor,
     };
     return (
       <>
         <div id="Container">
           <ul className="NavList">
-            <a href="#" style={menuStyle}>
-              <li>Home</li>
-            </a>
-            <a href="#" style={menuStyle}>
-              <li>Game</li>
-            </a>
-            <a href="#" style={menuStyle}>
-              <li>Rank</li>
-            </a>
-            <a href="#" style={menuStyle}>
-              <li>List</li>
-            </a>
+            {menus.map((menu) => (
+              <li>
+                <a href="#" style={textColor}>
+                  {menu}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </>
