@@ -1,0 +1,27 @@
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+
+#Container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.NavList {
+    display: flex;
+    justify-content: space-between;
+    width: 40vw;
+    height: 7vh;
+    margin: 60px 70px;
+}
+
+.NavList li {
+    width: 130px;
+    height: 65px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    font-size: 1.2rem;
+}

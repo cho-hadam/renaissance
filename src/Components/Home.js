@@ -7,7 +7,7 @@ class Home extends React.Component {
   render() {
     return (
       <>
-        <Nav />
+        <Nav textColor="#fff" />
         <main></main>
       </>
     );
