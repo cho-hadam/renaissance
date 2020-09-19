@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import "../css/home.css";
 import Nav from "./Nav";
 

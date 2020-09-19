@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import "../css/nav.css";
 
 const menus = ["Home", "Game", "Rank", "List"];
