@@ -10,21 +10,25 @@ class Nav extends React.Component {
   };
 
   render() {
-    const textColor = {
-      color: this.state.color,
-    };
-    const { currentMenu } = this.state;
+    const { currentMenu, color } = this.state;
     return (
       <div id="Container">
         <ul className="NavList">
           {menus.map((menu) => {
-            let className = "";
+            let colorStyle;
             if (menu == currentMenu) {
-              className = "current";
+              colorStyle = {
+                color: color,
+                borderColor: color,
+              };
+            } else {
+              colorStyle = {
+                color: color,
+              };
             }
             return (
               <li>
-                <a href="#" style={textColor} className={className}>
+                <a href="#" style={colorStyle}>
                   {menu}
                 </a>
               </li>
