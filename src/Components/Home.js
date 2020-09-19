@@ -1,15 +1,13 @@
 import React from "react";
 import "../css/home.css";
-import Nav from "./Nav";
+
+const backgroundColor = {
+  backgroundColor: "#F5832D",
+};
 
 class Home extends React.Component {
   render() {
-    return (
-      <>
-        <Nav textColor="#fff" />
-        <main></main>
-      </>
-    );
+    return <main style={backgroundColor}>home</main>;
   }
 }
 

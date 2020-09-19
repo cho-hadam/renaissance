@@ -10,6 +10,14 @@ li {
     justify-content: flex-end;
 }
 
+.OrangeBack {
+    background-color: #F5832D;
+}
+
+.WhiteBack {
+    background-color: white;
+}
+
 .NavList {
     display: flex;
     justify-content: space-between;

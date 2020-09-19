@@ -1,20 +1,39 @@
 import React from "react";
 import "../css/nav.css";
+import { Link } from "react-router-dom";
 
 const menus = ["Home", "Game", "Rank", "List"];
 
 class Nav extends React.Component {
   state = {
-    color: this.props.textColor,
+    color: "white",
     currentMenu: "Home",
+    backgroundColor: "OrangeBack",
   };
 
   render() {
-    const { currentMenu, color } = this.state;
+    const { currentMenu, color, backgroundColor } = this.state;
+
+    const _clickHandle = (event) => {
+      event.preventDefault();
+      const menu = event.target.innerText;
+      let color = "white";
+      let backgroundColor = "OrangeBack";
+      if (menu == "List") {
+        color = "black";
+        backgroundColor = "WhiteBack";
+      }
+      this.setState({
+        color: color,
+        currentMenu: menu,
+        backgroundColor: backgroundColor,
+      });
+    };
+
     return (
-      <div id="Container">
+      <div id="Container" className={backgroundColor}>
         <ul className="NavList">
-          {menus.map((menu) => {
+          {menus.map((menu, index) => {
             let colorStyle;
             if (menu == currentMenu) {
               colorStyle = {
@@ -27,10 +46,10 @@ class Nav extends React.Component {
               };
             }
             return (
-              <li>
-                <a href="#" style={colorStyle}>
+              <li key={index}>
+                <Link to={`/${menu}`} style={colorStyle} onClick={_clickHandle}>
                   {menu}
-                </a>
+                </Link>
               </li>
             );
           })}
