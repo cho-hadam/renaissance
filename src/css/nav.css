@@ -23,7 +23,7 @@ li {
     display: flex;
     width: 8vw;
     height: 6.5vh;
-    border: 1.5px solid white;
+    border: 1.5px solid transparent;
     border-radius: 30px;
     font-size: 1.2rem;
     justify-content: center;
