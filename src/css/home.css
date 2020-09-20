@@ -1,5 +1,52 @@
 main {
-    display: flex;
     width: 100vw;
     height: 81vh;
+}
+
+.Contents {
+    display: flex;
+    width: 100%;
+    padding: 3vh 90px 9vh 150px;
+    justify-content: space-between;
+    color: white;
+}
+
+.LeftContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.LeftContent h1 {
+    font-size: 3.2rem;
+    margin-bottom: 35px;
+}
+
+.LeftContent p {
+    font-size: 1.2rem;
+    margin-bottom: 90px;
+    max-width: 800px;
+}
+
+.RightContent {
+    display: flex;
+    align-items: center;
+}
+
+.RightContent img {
+    width: 40vw;
+    height: auto;
+    max-height: 58vh;
+    object-fit: contain;
+}
+
+.BtnGame {
+    width: 150px;
+    height: 55px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #F5832D;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
 }
