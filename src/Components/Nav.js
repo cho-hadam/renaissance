@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/nav.css";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 const menus = ["Home", "Game", "Rank", "List"];
 
@@ -48,10 +48,9 @@ class Nav extends React.Component {
               };
             }
 
-            // Link to not working
             return (
-              <li key={index}>
-                <Link to={`/${menu}`} style={colorStyle} onClick={_clickHandle}>
+              <li key={index} onClick={_clickHandle}>
+                <Link to={`/${menu}`} style={colorStyle}>
                   {menu}
                 </Link>
               </li>
