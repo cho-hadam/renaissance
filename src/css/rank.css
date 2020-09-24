@@ -15,9 +15,9 @@ main {
 
 
 .scroll-box-container {
-
     display: inline-block;
     border-radius : '15px';
+    width: 100%;
 }
   
  .scroll-box__wrapper {
