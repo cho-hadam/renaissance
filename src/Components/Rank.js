@@ -5,16 +5,16 @@ const backgroundColor = {
   backgroundColor: "#F5832D",
 };
 
-class ScrollBox extends Comment{
-  render(){
+// class ScrollBox extends C{
+//   render(){
     
-    return(
-      <div className="scroll-box">
+//     return(
+//       <div className="scroll-box">
          
-      </div>
-    )
-  }
-}
+//       </div>
+//     )
+//   }
+// }
 
 
 
