@@ -1,5 +1,6 @@
 import React from "react";
 import "../../css/home.css";
+import shopImg from "../../assets/image/shop.png";
 
 const backgroundColor = {
   backgroundColor: "#F5832D",
@@ -22,7 +23,7 @@ class Home extends React.Component {
             <button className={"BtnGame"}>Game</button>
           </div>
           <div className={"RightContent"}>
-            <img src={require("../assets/image/shop.png")} />
+            <img src={shopImg} />
           </div>
         </section>
       </main>
