@@ -1,5 +1,6 @@
 import React from "react";
 import "../../css/list.css";
+import { Link } from "react-router-dom";
 
 const backgroundColor = {
   backgroundColor: "white",
@@ -7,7 +8,11 @@ const backgroundColor = {
 
 class List extends React.Component {
   render() {
-    return <main style={backgroundColor}>list</main>;
+    return (
+      <main style={backgroundColor}>
+        <Link to={`/List/${"dfsd"}`}>go to detail page</Link>
+      </main>
+    );
   }
 }
 
