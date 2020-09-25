@@ -1,13 +1,13 @@
 import React from "react";
-import "../css/game.css";
+import "../../css/list.css";
 
 const backgroundColor = {
-  backgroundColor: "#F5832D",
+  backgroundColor: "white",
 };
 
 class List extends React.Component {
   render() {
-    return <main style={backgroundColor}>game</main>;
+    return <main style={backgroundColor}>list</main>;
   }
 }
 
