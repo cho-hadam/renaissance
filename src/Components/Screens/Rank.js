@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/rank.css";
+import "../../css/rank.css";
 
 const backgroundColor = {
   backgroundColor: "#F5832D",

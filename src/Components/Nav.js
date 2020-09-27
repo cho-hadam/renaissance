@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/nav.css";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const menus = ["Home", "Game", "Rank", "List"];
 
