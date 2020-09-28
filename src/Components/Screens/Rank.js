@@ -15,13 +15,11 @@ class Rank extends React.Component {
   render() {
     return(
       <main style={backgroundColor}>
-        <div>
-          <div className="#">
-            {this.props.dodoTak.map(function(app){
+        <div className="ScrollBox">
+          {/* {this.props.rank.map(()=>{
               return <div/>
-            })}
-          </div>
-        </div>
+            })} */}
+        </div>      
       </main>
     )
   }
