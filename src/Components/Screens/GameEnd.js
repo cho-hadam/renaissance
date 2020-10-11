@@ -7,7 +7,7 @@ const styles = {
   },
 };
 
-class List extends React.Component {
+class GameEnd extends React.Component {
   render() {
     return (
       <main style={styles.backgroundColor}>
@@ -26,4 +26,4 @@ class List extends React.Component {
   }
 }
 
-export default List;
+export default GameEnd;
