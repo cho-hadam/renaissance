@@ -4,10 +4,10 @@ const backgroundColor = {
   backgroundColor: "#fff",
 };
 
-class List extends React.Component {
+class Shop extends React.Component {
   render() {
     return <main style={backgroundColor}>Shop</main>;
   }
 }
 
-export default List;
+export default Shop;
