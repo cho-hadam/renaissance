@@ -1,0 +1,57 @@
+.Contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.TopContent {
+    text-align: center;
+}
+.TopContent h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.TopContent span {
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.BottomContent {
+    margin-top: 13%;
+}
+input[type='text'] {
+    width: 40vw;
+    height: 10vh;
+    min-height: 50px;
+    background-color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-left: 40px;
+}
+input[type='text']::placeholder {
+    color: #999999;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.BtnSubmit {
+    height: 10vh;
+    min-height: 50px;
+    width: 12vw;
+    min-width: 100px;
+    margin-left: 30px;
+    background-color: transparent;
+    border: 5px solid white;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+.BtnSubmit:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
