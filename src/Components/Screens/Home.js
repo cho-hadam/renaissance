@@ -1,6 +1,6 @@
 import React from "react";
 import "../../css/home.css";
-import shopImg from "../../assets/image/shop.png";
+import shopImg from "../../assets/image/home/shop.png";
 
 const backgroundColor = {
   backgroundColor: "#F5832D",
