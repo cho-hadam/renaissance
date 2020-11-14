@@ -1,0 +1,62 @@
+main {
+    width: 100vw;
+    height: 81vh;
+}
+
+#HomeContainer {
+    background-color: #F5832D;
+}
+
+.HomeContents {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 3vh 90px 9vh 150px;
+
+    color: white;
+}
+
+.LeftContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.LeftContent h1 {
+    font-size: 3.2rem;
+    margin-bottom: 35px;
+}
+
+.HomeDescription {
+    max-width: 800px;
+    margin-bottom: 90px;
+
+    font-size: 1.2rem;
+}
+
+.RightContent {
+    display: flex;
+    align-items: center;
+}
+
+.RightContent img {
+    width: 40vw;
+    height: auto;
+    max-height: 58vh;
+
+    object-fit: contain;
+}
+
+.BtnGame {
+    width: 150px;
+    height: 55px;
+    
+    border: none;
+    border-radius: 25px;
+
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #F5832D;
+    background-color: white;
+}
