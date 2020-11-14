@@ -2,6 +2,8 @@ import React from "react";
 import "../../css/home.css";
 import shopImg from "../../assets/image/home/shop.png";
 
+import { Link } from "react-router-dom";
+
 const backgroundColor = {
   backgroundColor: "#F5832D",
 };
@@ -20,7 +22,16 @@ class Home extends React.Component {
               posuere. Praesent facilisis finibus orci id sagittis. Nullam a
               suscipit neque, eget sollicitudin urna.
             </p>
-            <button className={"BtnGame"}>Game</button>
+            <Link to="/Game">
+              <button
+                className={"BtnGame"}
+                onClick={() => {
+                  localStorage.setItem("menu", JSON.stringify("Game"));
+                }}
+              >
+                Game
+              </button>
+            </Link>
           </div>
           <div className={"RightContent"}>
             <img src={shopImg} />

@@ -1,8 +1,11 @@
-.Contents {
+.ContentContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    padding: 3vh 90px 9vh 150px;
+    color: white;
 }
 
 .TopContent {
@@ -36,6 +39,9 @@ input[type='text']::placeholder {
     color: #999999;
     font-size: 1.6rem;
     font-weight: bold;
+}
+input[type='text']:focus {
+    outline: none;
 }
 
 .BtnSubmit {

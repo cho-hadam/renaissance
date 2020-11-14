@@ -11,7 +11,7 @@ class GameEnd extends React.Component {
   render() {
     return (
       <main style={styles.backgroundColor}>
-        <section className={"Contents"}>
+        <form action="" method="post" className={"ContentContainer"}>
           <div className={"TopContent"}>
             <h1>SCORE</h1>
             <span>2019</span>
@@ -20,7 +20,7 @@ class GameEnd extends React.Component {
             <input type={"text"} placeholder={"이름을 입력하세요"} />
             <button className={"BtnSubmit"}>확인</button>
           </div>
-        </section>
+        </form>
       </main>
     );
   }
