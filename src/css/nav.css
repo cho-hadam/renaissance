@@ -1,0 +1,43 @@
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+
+#NavContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.OrangeBack {
+    background-color: #F5832D;
+}
+
+.WhiteBack {
+    background-color: white;
+}
+
+.NavList {
+    display: flex;
+    justify-content: space-between;
+
+    width: 40vw;
+    height: 7vh;
+    margin: 6vh 5vw;
+    padding: 0px;
+}
+
+.NavList a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 8vw;
+    height: 6.5vh;
+
+    border: 1.5px solid transparent;
+    border-radius: 30px;
+
+    font-size: 1.2rem;
+}
