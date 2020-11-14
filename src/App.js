@@ -5,7 +5,7 @@ import Home from "./Components/Screens/Home";
 // import Game from "./Components/Screens/Game";
 // import Rank from "./Components/Screens/Rank";
 // import List from "./Components/Screens/List";
-// import GameEnd from "./Components/Screens/GameEnd";
+import GameEnd from "./Components/Screens/GameEnd";
 // import Shop from "./Components/Screens/Shop";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -25,12 +25,12 @@ function App() {
 
         {/* <Route exact path="/Game">
           <Game />
-        </Route>
+        </Route> */}
         <Route path="/Game/End">
           <GameEnd />
         </Route>
 
-        <Route path="/Rank">
+        {/* <Route path="/Rank">
           <Rank />
         </Route>
 

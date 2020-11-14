@@ -1,0 +1,74 @@
+/* Main Container */
+#GameEndContainer {
+    display: flex;
+    justify-content: center;
+    
+    background-color: #F5832D;
+}
+
+/* Contents Container */
+.GameEndContents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Score */
+.TopContent {
+    text-align: center;
+    color: white;
+}
+.TopContent h1 {
+    margin: 0;
+
+    font-size: 2rem;
+    font-weight: bold;
+}
+.TopContent span {
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+/* Input, Submit */
+.BottomContent {
+    margin-top: 13%;
+}
+.NameInput {
+    width: 40vw;
+    height: 10vh;
+    min-height: 50px;
+    padding-left: 40px;
+
+    background-color: white;
+    border-radius: 30px;
+    border: none;
+
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.NameInput::placeholder {
+    color: #999999;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.NameInput:focus {
+    outline: none;
+}
+
+.BtnSubmit {
+    height: 10vh;
+    min-height: 50px;
+    width: 12vw;
+    min-width: 100px;
+    margin-left: 30px;
+    background-color: transparent;
+    border: 5px solid white;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+.BtnSubmit:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
