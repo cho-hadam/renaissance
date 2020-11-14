@@ -1,18 +1,22 @@
 main {
     width: 100vw;
+    max-width: 100vw;
     height: 81vh;
 }
 
 #HomeContainer {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
     background-color: #F5832D;
 }
 
 .HomeContents {
     display: flex;
     justify-content: space-between;
-
-    width: 100%;
-    padding: 3vh 90px 9vh 150px;
+    
+    margin: 10px 40px;
 
     color: white;
 }

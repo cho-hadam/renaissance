@@ -8,6 +8,10 @@ li {
 #NavContainer {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    
+    width: 100vw;
+    height: 19vh;
 }
 
 .OrangeBack {
@@ -20,12 +24,10 @@ li {
 
 .NavList {
     display: flex;
-    justify-content: space-between;
+}
 
-    width: 40vw;
-    height: 7vh;
-    margin: 6vh 5vw;
-    padding: 0px;
+.NavList li {
+    margin-right: 5vw;
 }
 
 .NavList a {
@@ -34,6 +36,7 @@ li {
     align-items: center;
 
     width: 8vw;
+    min-width: 110px;
     height: 6.5vh;
 
     border: 1.5px solid transparent;
