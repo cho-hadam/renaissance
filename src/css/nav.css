@@ -30,6 +30,7 @@ li {
 .NavList a {
     display: flex;
     width: 8vw;
+    min-width: 100px;
     height: 6.5vh;
     border: 1.5px solid transparent;
     border-radius: 30px;

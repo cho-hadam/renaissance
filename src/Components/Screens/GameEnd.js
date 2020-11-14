@@ -11,7 +11,7 @@ class GameEnd extends React.Component {
   render() {
     return (
       <main style={styles.backgroundColor}>
-        <form action="" method="post" className={"Contents"}>
+        <form action="" method="post" className={"ContentContainer"}>
           <div className={"TopContent"}>
             <h1>SCORE</h1>
             <span>2019</span>

@@ -3,6 +3,7 @@ main {
     height: 81vh;
 }
 
+/* Container */
 .Contents {
     display: flex;
     width: 100%;
@@ -17,22 +18,25 @@ main {
     justify-content: center;
 }
 
+.RightContent {
+    display: flex;
+    align-items: center;
+}
+
+/* Title */
 .LeftContent h1 {
     font-size: 3.2rem;
     margin-bottom: 35px;
 }
 
+/* description */
 .LeftContent p {
     font-size: 1.2rem;
     margin-bottom: 90px;
     max-width: 800px;
 }
 
-.RightContent {
-    display: flex;
-    align-items: center;
-}
-
+/* Isometric */
 .RightContent img {
     width: 40vw;
     height: auto;
@@ -40,6 +44,7 @@ main {
     object-fit: contain;
 }
 
+/* Button */
 .BtnGame {
     width: 150px;
     height: 55px;
@@ -49,4 +54,9 @@ main {
     background-color: white;
     border: none;
     border-radius: 25px;
+    cursor: pointer;
+}
+
+.BtnGame:focus {
+    outline: none;
 }
