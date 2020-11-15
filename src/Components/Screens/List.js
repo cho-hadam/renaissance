@@ -10,7 +10,12 @@ class List extends React.Component {
   render() {
     return (
       <main style={backgroundColor}>
-        <Link to={`/List/${"dfsd"}`}>go to detail page</Link>
+
+        <div className = "Leftround">
+        </div>
+        <div className = "Rightround">
+        </div>
+{/* <Link to={`/List/${"dfsd"}`}>go to detail page</Link> */}
       </main>
     );
   }
