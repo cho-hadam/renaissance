@@ -2,6 +2,7 @@ main {
     display: flex;
     width: 100vw;
     height: 81vh;
+    background-color: "#F5832D";
 }
 
 .rounded {
@@ -53,5 +54,8 @@ main {
     color: white;
     background-color:#F5832D;
     border: none;
+    top: 50%;
     border-radius: 25px;
+    margin-bottom: 2vh;
+
 }
