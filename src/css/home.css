@@ -43,19 +43,6 @@ main {
     font-size: 1.2rem;
 }
 
-.BtnGame {
-    width: 150px;
-    height: 55px;
-    
-    border: none;
-    border-radius: 25px;
-
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: #F5832D;
-    background-color: white;
-}
-
 /* Isometric Image */
 .RightContent {
     display: flex;

@@ -3,6 +3,8 @@ import React from "react";
 import "../../css/home.css";
 import ShopImage from "../../assets/image/home/shop-isometric.png";
 
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <main id={"HomeContainer"}>
@@ -16,7 +18,6 @@ function Home() {
             facilisis finibus orci id sagittis. Nullam a suscipit neque, eget
             sollicitudin urna.
           </p>
-          <button className={"BtnGame"}>Game</button>
         </div>
         <div className={"RightContent"}>
           <img src={ShopImage} />
