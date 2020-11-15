@@ -4,9 +4,9 @@ import Nav from "./Components/Items/Nav";
 import Home from "./Components/Screens/Home";
 // import Game from "./Components/Screens/Game";
 // import Rank from "./Components/Screens/Rank";
-// import List from "./Components/Screens/List";
+import List from "./Components/Screens/List";
 import GameEnd from "./Components/Screens/GameEnd";
-// import Shop from "./Components/Screens/Shop";
+import Shop from "./Components/Screens/Shop";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -32,14 +32,14 @@ function App() {
 
         {/* <Route path="/Rank">
           <Rank />
-        </Route>
+        </Route> */}
 
         <Route exact path="/List">
           <List />
         </Route>
         <Route exact path="/List/:id">
           <Shop />
-        </Route> */}
+        </Route>
       </Switch>
     </Router>
   );
