@@ -1,7 +1,7 @@
 import React from "react";
 
 import "../../css/home.css";
-import ShopImage from "../../assets/image/home/shop-isometric.png";
+import ShopImage from "../../assets/images/home/shop-isometric.png";
 
 import { Link } from "react-router-dom";
 

@@ -1,42 +1,38 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const IMAGE_BASE_DIR = "../../assets/image/menu/";
+import "../../css/list.css";
+import storeData from "../../data/store_data.json";
 
 function List() {
   const [stores, setStores] = useState([]);
+  const [images, setImages] = useState([]);
   useEffect(() => {
-    setStores([
-      {
-        name: "마티스 커피",
-        address: "서울 관악구 신림로59길 15-6",
-        call: "02-884-6321",
-        time: "매일 11:00 - 24:00",
-        menu: {
-          name: "핸드드립",
-          price: "6000",
-          image: "../../assets/image/menu/coffee.png",
-        },
-      },
-    ]);
+    setStores(storeData);
+    stores.forEach((store) => {
+      import(`../../assets/images/menu/${store.menu.image}.png`).then((img) =>
+        setImages([...images, img])
+      );
+    });
   }, []);
   return (
     <main id={"ListContainer"}>
-      {stores.map((store, index) => {
-        return (
-          <Link to={`/List/${index}`} key={index}>
-            <div className={"CardContainer"}>
-              <div className={"CardCircle"}>
-                <img src={require("../../assets/image/menu/coffee.png")} />
-              </div>
-              <div className={"StoreDesc"}>
-                <span className={"StoreName"}>{store.name}</span>
-                <span className={"StoreTag"}></span>
-              </div>
+      {stores.map((store, index) => (
+        <Link to={`/List/${index}`} key={index}>
+          <div className={"CardContainer"}>
+            <div className={"CardCircle"}>
+              <img
+                src={images.length != 0 ? images[index].default : ""}
+                alt={store.name}
+              />
             </div>
-          </Link>
-        );
-      })}
+            <div className={"StoreDesc"}>
+              <span className={"StoreName"}>{store.name}</span>
+              <span className={"StoreTag"}></span>
+            </div>
+          </div>
+        </Link>
+      ))}
     </main>
   );
 }
