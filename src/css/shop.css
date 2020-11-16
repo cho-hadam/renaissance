@@ -1,0 +1,48 @@
+/* Main Container */
+#ShopContainer {
+    margin: 160px;
+}
+
+/* Left */
+.ShopLeftContainer {
+    display: flex;
+}
+
+/* Shop Name */
+.ShopLeftContainer h1 {
+    font-size: 2rem;
+}
+
+/* Shop Detail Icon */
+.ShopDetail img {
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+/* Shop Detail */
+.LocationContainer,
+.CallContainer,
+.TimeContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Button Homepage */
+.BtnHomepage {
+    width: 200px;
+    height: 70px;
+    margin-top: 70px;
+
+    background-color: #F5832D;
+    border-radius: 30px;
+
+    border: none;
+
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    cursor: pointer;
+}
