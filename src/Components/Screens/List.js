@@ -18,17 +18,17 @@ function List() {
   return (
     <main id={"ListContainer"}>
       {stores.map((store, index) => (
-        <Link to={`/List/${index}`} key={index}>
+        <Link to={`/List/${index}`} key={index} className={"CardLink"}>
           <div className={"CardContainer"}>
             <div className={"CardCircle"}>
               <img
-                src={images.length != 0 ? images[index].default : ""}
+                src={images[index] != undefined ? images[index].default : ""}
                 alt={store.name}
               />
             </div>
             <div className={"StoreDesc"}>
               <span className={"StoreName"}>{store.name}</span>
-              <span className={"StoreTag"}></span>
+              <span className={"StoreTag"}>#d</span>
             </div>
           </div>
         </Link>
