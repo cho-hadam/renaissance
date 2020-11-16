@@ -24,7 +24,13 @@ function List() {
             </div>
             <div className={"StoreDesc"}>
               <span className={"StoreName"}>{store.name}</span>
-              <span className={"StoreTag"}>#d</span>
+              <div>
+                {store.menus.map((menu, index) => (
+                  <span key={index} className={"StoreTag"}>
+                    #{menu.name}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </Link>
