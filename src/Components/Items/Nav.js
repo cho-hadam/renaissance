@@ -6,27 +6,8 @@ import { Link } from "react-router-dom";
 
 const menus = ["Home", "Game", "Rank", "List"];
 
-function Nav() {
-  const [color, setColor] = useState("white");
-  const [currentMenu, setCurrentMenu] = useState(
-    JSON.parse(localStorage.getItem("menu")) || "Home"
-  );
-  const [backgroundColor, setBackgroundColor] = useState("");
-
-  const setMenuColor = (currentMenu) => {
-    let color = "white";
-    let backgroundColor = "OrangeBack";
-
-    if (currentMenu === "List") {
-      color = "black";
-      backgroundColor = "WhiteBack";
-    }
-
-    setColor(color);
-    setCurrentMenu(currentMenu);
-    setBackgroundColor(backgroundColor);
-  };
-
+function Nav(props) {
+  const { color, currentMenu, backgroundColor, setMenuColor } = props.setNav;
   useEffect(() => {
     setMenuColor(currentMenu);
   }, []);
