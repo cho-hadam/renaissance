@@ -1,3 +1,4 @@
+import { render } from "@testing-library/react";
 import React from "react";
 import "../../css/rank.css";
 
@@ -5,24 +6,46 @@ const backgroundColor = {
   backgroundColor: "#F5832D",
 };
 
-class Scroll extends React.Component {
+
+
+function ScoreList(props) {
+ 
+    return (
+      <div>
+        <div>
+          {props.user.rank}
+        </div>
+        <div>
+          {props.user.name}
+        </div>
+        <div>
+          {props.user.score}
+        </div>
+      </div>
+    );
   
 }
 
-
-
-class Rank extends React.Component {
-  render() {
+function Rank() {
     return(
       <main style={backgroundColor}>
         <div className="ScrollBox">
-          {/* {this.props.rank.map(()=>{
-              return <div/>
-            })} */}
-        </div>      
+          
+        </div>    
+        <div className="myScore">
+          <div className="myscore_rank">
+            58위
+          </div>
+          <div className="myscore_name">
+            오지민
+          </div>
+          <div className="myscore_score">
+            3453점
+          </div>
+      </div>
       </main>
     )
-  }
+  
 }
 
 export default Rank;

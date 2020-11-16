@@ -13,13 +13,19 @@ main {
     position: relative;
     overflow: hidden;
     margin: 0 auto;
-    top: 350px;
-    box-sizing: border-box;
-    box-shadow: inset 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
-    
+    top: 300px;
+  
+} 
+
+
+.myScore{
+    background-color: white;
+    height : 200px;
+    width : 76%;
+    position: absolute;
+    top: 530px;
+    align-self: center;
+    margin: 0 auto;
+    display: flex;
 }
 
-
-
-
-  
