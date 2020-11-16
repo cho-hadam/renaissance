@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
+const IMAGE_BASE_DIR = "../../assets/image/menu/";
+
 function List() {
   const [stores, setStores] = useState([]);
   useEffect(() => {
@@ -25,7 +27,7 @@ function List() {
           <Link to={`/List/${index}`} key={index}>
             <div className={"CardContainer"}>
               <div className={"CardCircle"}>
-                <img src={require(store.menu.image)} />
+                <img src={require("../../assets/image/menu/coffee.png")} />
               </div>
               <div className={"StoreDesc"}>
                 <span className={"StoreName"}>{store.name}</span>
