@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import logo from "./logo.svg";
 
 import Nav from "./Components/Items/Nav";
@@ -11,9 +12,36 @@ import Shop from "./Components/Screens/Shop";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
+  const [color, setColor] = useState("white");
+  const [currentMenu, setCurrentMenu] = useState(
+    JSON.parse(localStorage.getItem("menu")) || "Home"
+  );
+  const [backgroundColor, setBackgroundColor] = useState("");
+
+  const setMenuColor = (currentMenu) => {
+    let color = "white";
+    let backgroundColor = "OrangeBack";
+
+    if (currentMenu === "List") {
+      color = "black";
+      backgroundColor = "WhiteBack";
+    }
+
+    setColor(color);
+    setCurrentMenu(currentMenu);
+    setBackgroundColor(backgroundColor);
+  };
+
   return (
     <Router>
-      <Nav />
+      <Nav
+        setNav={{
+          color: color,
+          currentMenu: currentMenu,
+          backgroundColor: backgroundColor,
+          setMenuColor: setMenuColor,
+        }}
+      />
 
       <Switch>
         <Route exact path="/">
