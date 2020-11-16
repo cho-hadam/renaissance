@@ -12,6 +12,7 @@ import Shop from "./Components/Screens/Shop";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
+  // Set Nav Style
   const [color, setColor] = useState("white");
   const [currentMenu, setCurrentMenu] = useState(
     JSON.parse(localStorage.getItem("menu")) || "Home"
@@ -32,6 +33,19 @@ function App() {
     setBackgroundColor(backgroundColor);
   };
 
+  const clickHandle = (e) => {
+    e.preventDefault();
+    const menu = e.target.innerText;
+
+    localStorage.setItem("menu", JSON.stringify(menu));
+    setMenuColor(menu);
+  };
+
+  // componentDidMount
+  useEffect(() => {
+    setMenuColor(currentMenu);
+  }, []);
+
   return (
     <Router>
       <Nav
@@ -40,15 +54,16 @@ function App() {
           currentMenu: currentMenu,
           backgroundColor: backgroundColor,
           setMenuColor: setMenuColor,
+          clickHandle: clickHandle,
         }}
       />
 
       <Switch>
         <Route exact path="/">
-          <Home />
+          <Home setNav={{ clickHandle: clickHandle }} />
         </Route>
         <Route path="/Home">
-          <Home />
+          <Home setNav={{ clickHandle: clickHandle }} />
         </Route>
 
         {/* <Route exact path="/Game">

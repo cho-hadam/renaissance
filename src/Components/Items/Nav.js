@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import "../../css/nav.css";
 
@@ -7,18 +7,7 @@ import { Link } from "react-router-dom";
 const menus = ["Home", "Game", "Rank", "List"];
 
 function Nav(props) {
-  const { color, currentMenu, backgroundColor, setMenuColor } = props.setNav;
-  useEffect(() => {
-    setMenuColor(currentMenu);
-  }, []);
-
-  const clickHandle = (e) => {
-    e.preventDefault();
-    const menu = e.target.innerText;
-
-    localStorage.setItem("menu", JSON.stringify(menu));
-    setMenuColor(menu);
-  };
+  const { color, currentMenu, backgroundColor, clickHandle } = props.setNav;
 
   return (
     <div id={"NavContainer"} className={backgroundColor}>

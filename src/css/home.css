@@ -43,6 +43,30 @@ main {
     font-size: 1.2rem;
 }
 
+.BtnGame {
+    width: 150px;
+    height: 55px;
+    padding: 0;
+
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+}
+
+.LinkGame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    color: #F5832D;
+
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
 /* Isometric Image */
 .RightContent {
     display: flex;
