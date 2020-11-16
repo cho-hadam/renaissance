@@ -2,7 +2,6 @@ main {
     display: flex;
     width: 100vw;
     height: 81vh;
-    background-color: "#F5832D";
 }
 
 .rounded {
@@ -28,6 +27,11 @@ main {
     display: flex;
     align-items: center;
 }
+.RightContent img{
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
 
 .font{
     display: flex;
@@ -47,7 +51,7 @@ main {
 }
 
 .Btnanswer {
-    width: 150px;
+    width: 250px;
     height: 55px;
     font-size: 1.4rem;
     font-weight: 600;

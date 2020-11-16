@@ -7,13 +7,11 @@ main {
 .Leftround {
     background-color:#F5832D;
     height: 60vh; width: 60vh;
-    flex-wrap: wrap;
     border-radius: 15px;
     margin-left: 10%;
     margin-right: 5%;
     margin-top: 3%;    
     box-shadow:3px 3px 3px 3px lightgray;
-    position: static;
 }
 
 .Rightround {
