@@ -25,11 +25,15 @@ function List() {
             <div className={"StoreDesc"}>
               <span className={"StoreName"}>{store.name}</span>
               <div>
-                {store.menus.map((menu, index) => (
-                  <span key={index} className={"StoreTag"}>
-                    #{menu.name}
-                  </span>
-                ))}
+                {store.menus.map((menu, index) => {
+                  return index < 3 ? (
+                    <span key={index} className={"StoreTag"}>
+                      #{menu.name}
+                    </span>
+                  ) : (
+                    <span key={index}></span>
+                  );
+                })}
               </div>
             </div>
           </div>
