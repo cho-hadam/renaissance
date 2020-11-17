@@ -9,7 +9,12 @@ import List from "./Components/Screens/List";
 import GameEnd from "./Components/Screens/GameEnd";
 import Shop from "./Components/Screens/Shop";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 
 function App() {
   // Set Nav Style
@@ -58,6 +63,7 @@ function App() {
         }}
       />
 
+      <Redirect to={{ pathname: `/${currentMenu}` }} />
       <Switch>
         <Route exact path="/">
           <Home setNav={{ clickHandle: clickHandle }} />
