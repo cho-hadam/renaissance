@@ -1,10 +1,11 @@
 /* Main Container */
 #ShopContainer {
     display: flex;
+    justify-content: space-between;
 
-    padding: 160px;
     height: auto;
     max-height: 81vh;
+    padding: 8vw;
 }
 
 /* Left */
@@ -33,6 +34,8 @@
     align-items: center;
 
     margin-bottom: 10px;
+
+    font-size: 1.2rem;
 }
 
 /* Button Homepage */
@@ -124,4 +127,15 @@
 
 .TextPrice {
     font-size: 1.2rem;
+}
+
+/* Media Query */
+@media (max-width: 1100px) {
+    #ShopContainer {
+        flex-direction: column;
+    }
+
+    .ShopRightContainer {
+        margin-top: 100px;
+    }
 }

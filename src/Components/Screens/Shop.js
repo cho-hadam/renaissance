@@ -20,7 +20,7 @@ function Shop() {
   const { id } = useParams();
   const [shop, setShop] = useState(storeData[id]);
   return (
-    <main id={"ShopContainer"}>
+    <div id={"ShopContainer"}>
       <div className={"ShopLeftContainer"}>
         <h1>{shop.name}</h1>
         <div className={"ShopDetail"}>
@@ -67,7 +67,7 @@ function Shop() {
           </div>
         ))}
       </div>
-    </main>
+    </div>
   );
 }
 
