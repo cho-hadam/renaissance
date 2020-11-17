@@ -42,12 +42,11 @@ function Shop() {
       <div className={"ShopRightContainer"}>
         {shop.menus.map((menu, index) => (
           <div key={index} className={"MenuCard"}>
-            <div className={"BtnBack"}>
-              <img
-                src={index === 0 ? disabledBack : back}
-                alt={"back button"}
-              />
-            </div>
+            <img
+              className={index === 0 ? "BtnDisabledBack" : "BtnBack"}
+              src={index === 0 ? disabledBack : back}
+              alt={"back button"}
+            />
             <div className={"MenuDetail"}>
               <img src={image1} alt={menu.name} />
               <div className={"MenuName"}>
@@ -58,12 +57,13 @@ function Shop() {
               </div>
               <span className={"TextPrice"}>{menu.price} won</span>
             </div>
-            <div className={"BtnNext"}>
-              <img
-                src={index === shop.menus.length - 1 ? disabledNext : next}
-                alt={"back button"}
-              />
-            </div>
+            <img
+              className={
+                index === shop.menus.length - 1 ? "BtnDisabledNext" : "BtnNext"
+              }
+              src={index === shop.menus.length - 1 ? disabledNext : next}
+              alt={"back button"}
+            />
           </div>
         ))}
       </div>

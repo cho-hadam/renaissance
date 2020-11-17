@@ -75,11 +75,16 @@
     /* position: absolute; */
 }
 
-.BtnBack img,
-.BtnNext img {
+.BtnBack,
+.BtnNext,
+.BtnDisabledBack,
+.BtnDisabledNext {
     width: 35px;
     height: auto;
+}
 
+.BtnBack,
+.BtnNext {
     cursor: pointer;
 }
 
