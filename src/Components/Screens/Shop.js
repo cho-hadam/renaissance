@@ -19,6 +19,17 @@ import image1 from "../../assets/images/menu/coffee.png";
 function Shop() {
   const { id } = useParams();
   const [shop, setShop] = useState(storeData[id]);
+  const [activeMenuIndex, setActiveMenuIndex] = useState(0);
+
+  const MenuCardClickHandle = (e) => {
+    const btnType = e.target.className;
+    if (btnType === "BtnNext") {
+      setActiveMenuIndex(activeMenuIndex + 1);
+    } else if (btnType === "BtnBack") {
+      setActiveMenuIndex(activeMenuIndex - 1);
+    }
+  };
+
   return (
     <div id={"ShopContainer"}>
       <div className={"ShopLeftContainer"}>
@@ -41,8 +52,14 @@ function Shop() {
       </div>
       <div className={"ShopRightContainer"}>
         {shop.menus.map((menu, index) => (
-          <div key={index} className={"MenuCard"}>
+          <div
+            key={index}
+            className={
+              index === activeMenuIndex ? "MenuCard MenuCardActive" : "MenuCard"
+            }
+          >
             <img
+              onClick={MenuCardClickHandle}
               className={index === 0 ? "BtnDisabledBack" : "BtnBack"}
               src={index === 0 ? disabledBack : back}
               alt={"back button"}
@@ -58,6 +75,7 @@ function Shop() {
               <span className={"TextPrice"}>{menu.price} won</span>
             </div>
             <img
+              onClick={MenuCardClickHandle}
               className={
                 index === shop.menus.length - 1 ? "BtnDisabledNext" : "BtnNext"
               }

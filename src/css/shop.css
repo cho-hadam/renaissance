@@ -4,8 +4,9 @@
     justify-content: space-between;
 
     height: auto;
-    max-height: 81vh;
+    min-height: 81vh;
     padding: 8vw;
+    box-sizing: border-box;
 }
 
 /* Left */
@@ -62,7 +63,6 @@
     height: 330px;
     padding: 30px;
 
-    display: flex;
     justify-content: space-between;
     align-items: center;
 
@@ -72,7 +72,13 @@
 
     border-radius: 20px;
 
-    /* position: absolute; */
+    display: none;
+    pointer-events: none;
+}
+
+.MenuCardActive {
+    display: flex;
+    pointer-events: all;
 }
 
 .BtnBack,
@@ -142,5 +148,12 @@
 
     .ShopRightContainer {
         margin-top: 100px;
+    }
+
+    .MenuCard {
+        width: 400px;
+        height: 270px;
+        padding: 30px;
+        margin-bottom: 80px;
     }
 }
