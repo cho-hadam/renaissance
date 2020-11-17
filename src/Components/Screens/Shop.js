@@ -56,7 +56,7 @@ function Shop() {
                   <span>대표</span>
                 </div>
               </div>
-              <span>{menu.price} won</span>
+              <span className={"TextPrice"}>{menu.price} won</span>
             </div>
             <div className={"BtnNext"}>
               <img
