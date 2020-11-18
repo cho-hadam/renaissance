@@ -1,7 +1,7 @@
 /* Main Container */
 #ShopContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     height: auto;
     min-height: 81vh;
