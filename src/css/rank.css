@@ -1,3 +1,59 @@
+/* Main Container */
 #RankContainer {
     background-color: #F5832D;
+}
+
+/* 1, 2, 3 */
+.TopRankContainer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.TopRank {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ImageMedal {
+    width: 120px;
+    height: 120px;
+    margin-bottom: -60px;
+    z-index: 1;
+}
+
+.TopRankBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: 110px;
+    padding-top: 60px;
+
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 20px;
+
+    -webkit-box-shadow: 2px 3px 4px 0px rgba(0,0,0,0.25);
+       -moz-box-shadow: 2px 3px 4px 0px rgba(0,0,0,0.25);
+            box-shadow: 2px 3px 4px 0px rgba(0,0,0,0.25);
+}
+
+.First {
+    height: 170px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.TextName {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.TextScore {
+    font-size: 1.2rem;
+    margin-top: 5px;
 }

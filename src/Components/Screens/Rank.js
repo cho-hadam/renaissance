@@ -9,9 +9,9 @@ import BronzeImage from "../../assets/images/ranking/bronze-medal.png";
 
 function TopRank(props) {
   return (
-    <div>
-      <img src={props.image} alt={props.rank} />
-      <div className={"TopRankBox"}>
+    <div className={"TopRank"}>
+      <img className={"ImageMedal"} src={props.image} alt={props.rank} />
+      <div className={props.rank == 1 ? "TopRankBox First" : "TopRankBox"}>
         <span className={"TextName"}>{props.name}</span>
         <span className={"TextScore"}>{props.score}점</span>
       </div>
