@@ -1,0 +1,31 @@
+main {
+    display: flex;
+    width: 100vw;
+    height: 81vh;
+    overflow: hidden;
+}
+
+.ScrollBox {
+    border : 2px solid white;
+    height : 500px;
+    width : 76%;
+    border-radius : 50px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    top: 300px;
+  
+} 
+
+
+.myScore{
+    background-color: white;
+    height : 200px;
+    width : 76%;
+    position: absolute;
+    top: 530px;
+    align-self: center;
+    margin: 0 auto;
+    display: flex;
+}
+

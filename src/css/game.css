@@ -1,0 +1,65 @@
+main {
+    display: flex;
+    width: 100vw;
+    height: 81vh;
+}
+
+.rounded {
+    background-color: white;
+    height: 92%; width: 92%;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.LeftContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.LeftContent img{
+    width: 40vw;
+    height: auto;
+}
+
+.RightContent {
+    display: flex;
+    align-items: center;
+}
+.RightContent img{
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.font{
+    display: flex;
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.font h1{
+    font-size: 1.8rem;
+    margin-top: 3%;    
+}
+
+.font p{
+    font-size: 1.2rem;
+}
+
+.Btnanswer {
+    width: 250px;
+    height: 55px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
+    background-color:#F5832D;
+    border: none;
+    top: 50%;
+    border-radius: 25px;
+    margin-bottom: 2vh;
+
+}
