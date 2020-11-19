@@ -16,9 +16,10 @@ function GameEnd() {
             type={"text"}
             placeholder={"이름을 입력하세요"}
           />
-          <button className={"BtnSubmit"}>확인</button>
+          <button className={"BtnSubmit"}>{"확인"}</button>
         </div>
       </section>
+      <button className={"BtnExceptRank"}>{"랭킹 참여 안 하기"}</button>
     </main>
   );
 }
