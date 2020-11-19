@@ -1,0 +1,78 @@
+#GameContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    background-color: #F5832D;
+}
+
+.GameRoundBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 70vw;
+    height: 70vh;
+    
+    background-color: white;
+    border-radius: 40px;
+}
+
+.GameContentContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.GameLeftContents img{
+    width: 40vw;
+    max-width: 250px;
+    height: auto;
+}
+
+.GameRightContents {
+    height: 100%;
+    margin-left: 12vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.BtnAnswer {
+    width: 200px;
+    height: 55px;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color:#F5832D;
+
+    border: none;
+    top: 50%;
+    border-radius: 25px;
+
+    cursor: pointer;
+}
+
+.BtnAnswer:focus {
+    outline: none;
+}
+
+/* Media Query */
+@media (max-width: 1100px) {
+    .GameContentContainer {
+        flex-direction: column;
+    }
+
+    .GameRightContents {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .BtnAnswer {
+        margin-top: 10px;
+    }
+}
