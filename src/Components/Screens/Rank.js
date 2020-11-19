@@ -49,6 +49,9 @@ function Rank() {
       <div className={"BottomRankContainer"}>
         <RankItem rank={4} name={"오형민"} score={3800} />
         <RankItem rank={5} name={"공은정"} score={3400} />
+        <RankItem rank={5} name={"공은정"} score={3400} />
+        <RankItem rank={5} name={"공은정"} score={3400} />
+        <RankItem rank={5} name={"공은정"} score={3400} />
       </div>
       <div className={"MyRankContainer"}>
         <span>{"내 기록"}</span>
