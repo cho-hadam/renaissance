@@ -63,7 +63,11 @@ function App() {
         }}
       />
 
-      <Redirect to={{ pathname: `/${currentMenu}` }} />
+      {currentMenu === "Game/End" ? (
+        <Redirect to={{ pathname: `/Game` }} />
+      ) : (
+        <Redirect to={{ pathname: `/${currentMenu}` }} />
+      )}
       <Switch>
         <Route exact path="/">
           <Home setNav={{ clickHandle: clickHandle }} />
