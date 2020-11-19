@@ -4,7 +4,7 @@ import logo from "./logo.svg";
 import Nav from "./Components/Items/Nav";
 import Home from "./Components/Screens/Home";
 // import Game from "./Components/Screens/Game";
-// import Rank from "./Components/Screens/Rank";
+import Rank from "./Components/Screens/Rank";
 import List from "./Components/Screens/List";
 import GameEnd from "./Components/Screens/GameEnd";
 import Shop from "./Components/Screens/Shop";
@@ -79,9 +79,9 @@ function App() {
           <GameEnd />
         </Route>
 
-        {/* <Route path="/Rank">
+        <Route path="/Rank">
           <Rank />
-        </Route> */}
+        </Route>
 
         <Route exact path="/List">
           <List />
