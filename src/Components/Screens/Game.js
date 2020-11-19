@@ -1,41 +1,26 @@
 import React from "react";
 import "../../css/game.css";
-import foodImg from "../../assets/image/game/toppokki.jpg"
-const backgroundColor = {
-  backgroundColor: "#F5832D",
-};
+import foodImg from "../../assets/images/game/toppokki.png";
 
-//class Game extends React.Component {
-//  render() {
-//    return(
-//      <main style={backgroundColor}>
-//        <section className="rounded">
-//          <h1>
-//            사진을 보고 가게를 고르세요
-//          </h1>
-//          <section className = "LeftCentent">
-//          </section>
-//        </section>
-//      </main>
-//    )
-//  }}
 function Game() {
   return(
-   <main style = {backgroundColor}>
-     <section className="rounded">
+   <main id={"GameContainer"}>
+     <section className={"GameRoundBox"}>
       <h1>사진을 보고 가게를 고르세요</h1>
-      <section className = "LeftCentent">
-        <img src={foodImg}/>
-      </section>
-      <section className = "RightCentent">
-        <button className = {"Btnanswer"}>신사리즉석떡볶이</button><br/>
-        <button className = {"Btnanswer"}>안녕</button><br/>
-        <button className = {"Btnanswer"}>안녕</button><br/>
-        <button className = {"Btnanswer"}>안녕</button><br/>
-      </section>
+      <div className={"GameContentContainer"}>
+        <div className={"GameLeftContents"}>
+          <img src={foodImg} alt="test"/>
+        </div>
+        <div className={"GameRightContents"}>
+          <button className = {"BtnAnswer"}>신사리즉석떡볶이</button>
+          <button className = {"BtnAnswer"}>잉꼬떡방아</button>
+          <button className = {"BtnAnswer"}>틈새라면</button>
+          <button className = {"BtnAnswer"}>맵당</button>
+        </div>
+      </div>
      </section>
    </main>
-  )
+  );
 }
 
 export default Game;

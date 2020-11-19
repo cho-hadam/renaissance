@@ -1,65 +1,78 @@
-main {
+#GameContainer {
     display: flex;
-    width: 100vw;
-    height: 81vh;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    background-color: #F5832D;
 }
 
-.rounded {
+.GameRoundBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 70vw;
+    height: 70vh;
+    
     background-color: white;
-    height: 92%; width: 92%;
-    border-radius: 15px;
-    text-align: center;
-    margin: 0 auto;
+    border-radius: 40px;
 }
 
-.LeftContent {
+.GameContentContainer {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.LeftContent img{
+.GameLeftContents img{
     width: 40vw;
+    max-width: 250px;
     height: auto;
 }
 
-.RightContent {
-    display: flex;
-    align-items: center;
-}
-.RightContent img{
-    width: auto;
-    height: auto;
-    object-fit: contain;
-}
+.GameRightContents {
+    height: 100%;
+    margin-left: 12vw;
 
-.font{
     display: flex;
-    text-align: center; 
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    justify-content: space-around;
 }
 
-.font h1{
-    font-size: 1.8rem;
-    margin-top: 3%;    
-}
-
-.font p{
-    font-size: 1.2rem;
-}
-
-.Btnanswer {
-    width: 250px;
+.BtnAnswer {
+    width: 200px;
     height: 55px;
-    font-size: 1.4rem;
-    font-weight: 600;
+
+    font-size: 1.2rem;
+    font-weight: bold;
     color: white;
     background-color:#F5832D;
+
     border: none;
     top: 50%;
     border-radius: 25px;
-    margin-bottom: 2vh;
 
+    cursor: pointer;
+}
+
+.BtnAnswer:focus {
+    outline: none;
+}
+
+/* Media Query */
+@media (max-width: 1100px) {
+    .GameContentContainer {
+        flex-direction: column;
+    }
+
+    .GameRightContents {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .BtnAnswer {
+        margin-top: 10px;
+    }
 }

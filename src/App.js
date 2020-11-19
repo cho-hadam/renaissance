@@ -3,7 +3,7 @@ import logo from "./logo.svg";
 
 import Nav from "./Components/Items/Nav";
 import Home from "./Components/Screens/Home";
-// import Game from "./Components/Screens/Game";
+import Game from "./Components/Screens/Game";
 // import Rank from "./Components/Screens/Rank";
 import List from "./Components/Screens/List";
 import GameEnd from "./Components/Screens/GameEnd";
@@ -66,9 +66,9 @@ function App() {
           <Home setNav={{ clickHandle: clickHandle }} />
         </Route>
 
-        {/* <Route exact path="/Game">
+        <Route exact path="/Game">
           <Game />
-        </Route> */}
+        </Route>
         <Route path="/Game/End">
           <GameEnd />
         </Route>
