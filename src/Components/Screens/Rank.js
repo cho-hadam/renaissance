@@ -11,7 +11,7 @@ function TopRank(props) {
   return (
     <div className={"TopRank"}>
       <img className={"ImageMedal"} src={props.image} alt={props.rank} />
-      <div className={props.rank == 1 ? "TopRankBox First" : "TopRankBox"}>
+      <div className={props.rank === 1 ? "TopRankBox First" : "TopRankBox"}>
         <span className={"TextName"}>{props.name}</span>
         <span className={"TextScore"}>{props.score}점</span>
       </div>
@@ -54,12 +54,12 @@ function Rank() {
         <RankItem rank={5} name={"공은정"} score={3400} />
       </div>
       <div className={"MyRankContainer"}>
-        <span>{"내 기록"}</span>
-        <div>
-          <span>{myRecord.name}</span>
+        <span className={"TextMyScore"}>{"내 기록"}</span>
+        <div className={"NameRankContainer"}>
+          <span>{myRecord.name} </span>
           <span>({myRecord.rank}위)</span>
         </div>
-        <span>{myRecord.score}점</span>
+        <span className={"MyScore"}>{myRecord.score}점</span>
       </div>
     </main>
   );

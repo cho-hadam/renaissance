@@ -108,6 +108,21 @@
     position: fixed;
 }
 
+.TextMyScore {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #F5832D;
+}
+
+.NameRankContainer {
+    font-size: 1.2rem;
+}
+
+.MyScore {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 /* Media Query */
 @media (max-width: 800px) {
     /* 1, 2, 3 */
