@@ -1,6 +1,8 @@
 /* Main Container */
 #GameEndContainer {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     
     background-color: #F5832D;
@@ -34,7 +36,8 @@
     margin-top: 13%;
 }
 .NameInput {
-    width: 40vw;
+    width: 30vw;
+    min-width: 330px;
     height: 10vh;
     min-height: 50px;
     padding-left: 40px;
@@ -71,4 +74,23 @@
 .BtnSubmit:hover {
     opacity: 80%;
     cursor: pointer;
+}
+
+/* Button Except Rank */
+.BtnExceptRank {
+    align-self: flex-end;
+
+    margin: 40px;
+    margin-top: 80px;
+
+    background: none;
+    border: none;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.BtnExceptRank:focus {
+    outline: none;
 }

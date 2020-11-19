@@ -4,12 +4,17 @@ import logo from "./logo.svg";
 import Nav from "./Components/Items/Nav";
 import Home from "./Components/Screens/Home";
 import Game from "./Components/Screens/Game";
-// import Rank from "./Components/Screens/Rank";
+import Rank from "./Components/Screens/Rank";
 import List from "./Components/Screens/List";
 import GameEnd from "./Components/Screens/GameEnd";
 import Shop from "./Components/Screens/Shop";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 
 function App() {
   // Set Nav Style
@@ -58,6 +63,11 @@ function App() {
         }}
       />
 
+      {currentMenu === "Game/End" ? (
+        <Redirect to={{ pathname: `/Game` }} />
+      ) : (
+        <Redirect to={{ pathname: `/${currentMenu}` }} />
+      )}
       <Switch>
         <Route exact path="/">
           <Home setNav={{ clickHandle: clickHandle }} />
@@ -73,9 +83,9 @@ function App() {
           <GameEnd />
         </Route>
 
-        {/* <Route path="/Rank">
+        <Route path="/Rank">
           <Rank />
-        </Route> */}
+        </Route>
 
         <Route exact path="/List">
           <List />
