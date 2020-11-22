@@ -68,9 +68,13 @@ function Shop() {
               <img src={image1} alt={menu.name} />
               <div className={"MenuName"}>
                 <span>{menu.name}</span>
-                <div className={"MenuTag"}>
-                  <span>대표</span>
-                </div>
+                {menu.tag ? (
+                  <div className={"MenuTag"}>
+                    <span>대표</span>
+                  </div>
+                ) : (
+                  <></>
+                )}
               </div>
               <span className={"TextPrice"}>{menu.price} won</span>
             </div>
