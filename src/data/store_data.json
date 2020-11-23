@@ -17,5 +17,225 @@
                 "tag": false
             }
         ]
+    },
+
+    {
+        "name": "잉꼬떡방아",
+        "address": "서울특별시 관악구 신원로 23",
+        "call": "0507-1323-6809",
+        "time": "평일 04:00 - 20:00 매달 둘째주 화요일 휴무",
+        "homepage": "https://www.sixshop.com/simscoffee/home",
+        "menus": [
+            {
+                "name": "영양찰떡",
+                "price": "2000",
+                "tag": true
+            },
+            {
+                "name": "식혜",
+                "price": "3000",
+                "tag": false
+            }
+        ]
+    },
+
+    {
+        "name": "틈새라면",
+        "address": "서울특별시 관악구 신원로 59길 15-13",
+        "call": "02-887-7121",
+        "time": "주말 11:00 - 23:00 평일 11:00 - 24:00",
+        "homepage": "http://www.teumsae.com",
+        "menus": [
+            {
+                "name": "빨계떡",
+                "price": "4500",
+                "tag": true
+            },
+            {
+                "name": "꼬마김밥",
+                "price": "3500",
+                "tag": false
+            }
+        ]
+    },
+
+    {
+        "name": "맵당",
+        "address": "서울특별시 관악구 신원로 40-11 2층",
+        "call": "0507-1304-7292",
+        "time": "매일 11:00 - 24:00",
+        "homepage": "https://map.naver.com/v5/search/%EB%A7%B5%EB%8B%B9/place/1372378905?placeSearchOption=fromNxList=true%26noredirect=1%26entry=pll&c=14129739.8968792,4506467.293152254,13,0,0,0,dh&placePath=%2Fhome%3Fentry=pll",
+        "menus": [
+            {
+                "name": "매운갈비찜 소(2인)",
+                "price": "25000",
+                "tag": true
+            },
+            {
+                "name": "네모도시락",
+                "price": "4900",
+                "tag": false
+            }
+        ]
+    },
+
+    {
+        "name": "신사리즉석떡볶이",
+        "address": "서울특별시 관악구 신원로 40-12",
+        "call": "010-8414-0147",
+        "time": "매일 11:30 - 22:30 연중무휴",
+        "homepage": "http://cityfood.co.kr/h9/sinsali",
+        "menus": [
+            {
+                "name": "즉석불떡볶이",
+                "price": "9000",
+                "tag": true
+            },
+            {
+                "name": "마왕볶음밥",
+                "price": "6000",
+                "tag": false
+            }
+        ]
+    },
+
+    {
+        "name": "아저씨닭강정",
+        "address": "서울특별시 관악구 신원로 45-1",
+        "call": "02-865-3488",
+        "time": "매일 11:00 - 23:00 둘째 화요일 휴무",
+        "homepage": "https://www.ok114.co.kr/ntnw/search/searchCompanyOfMainPh.crz?phone_number=0336722339",
+        "menus": [
+            {
+                "name": "반반닭강정 중",
+                "price": "6000",
+                "tag": true
+            },
+            {
+                "name": "반반닭강정 대",
+                "price": "11000",
+                "tag": false
+            }
+        ]
+    },
+
+    {
+        "name": "59떡갈비",
+        "address": "서울특별시 관악구 신원로 23",
+        "call": "02-6053-3100",
+        "time": "매일 09:00 - 21:00 매월 둘째 화요일 휴무",
+        "homepage": "https://map.naver.com/v5/search/59%EB%96%A1%EA%B0%88%EB%B9%84?c=14129102.8169730,4506447.7148093,15,0,0,0,dh",
+        "menus": [
+            {
+                "name": "떡갈비B팩",
+                "price": "7000",
+                "tag": true
+            },
+            {
+                "name": "기쁨떡갈비팩",
+                "price": "10000",
+                "tag": false
+            }
+        ]
+    },
+    
+    {
+        "name": "고모네정육식당",
+        "address": "서울특별시 관악구 신원로 23",
+        "call": "02-838-8478",
+        "time": "매일 10:00 - 08:00",
+        "homepage": "https://map.naver.com/v5/search/%EA%B3%A0%EB%AA%A8%EB%84%A4%EC%A0%95%EC%9C%A1%EC%8B%9D%EB%8B%B9/place/1259635617?c=14128613.1422605,4506545.6497518,15,0,0,0,dh&placePath=%3F%2526",
+        "menus": [
+            {
+                "name": "육회비빔라면",
+                "price": "8000",
+                "tag": true
+            },
+            {
+                "name": "육회 냉면",
+                "price": "8000",
+                "tag": false
+            }
+        ]
+    },
+
+    {
+        "name": "시장분식",
+        "address": "서울특별시 관악구 신원로 19",
+        "call": "02-858-8787",
+        "time": "매일 10:00 - 08:00",
+        "homepage": "https://map.naver.com/v5/search/%EC%8B%9C%EC%9E%A5%EB%B6%84%EC%8B%9D/place/1344551600?c=14128312.1714617,4506727.1876940,15,0,0,0,dh&placePath=%3F%2526",
+        "menus": [
+            {
+                "name": "떡볶이",
+                "price": "3000",
+                "tag": true
+            },
+            {
+                "name": "참치김밥",
+                "price": "3000",
+                "tag": false
+            }
+        ]
+    },
+
+    {
+        "name": "시장탕수육",
+        "address": "서울특별시 관악구 신원로 19",
+        "call": "02-838-8478",
+        "time": "매달 둘째 넷째 화요일 휴무",
+        "homepage": "https://map.naver.com/v5/search/%EC%8B%9C%EC%9E%A5%ED%83%95%EC%88%98%EC%9C%A1/place/13539946?c=14128634.6401748,4506562.3703517,15,0,0,0,dh&placePath=%3F%2526",
+        "menus": [
+            {
+                "name": "탕수육",
+                "price": "3000~",
+                "tag": true
+            },
+            {
+                "name": "야채김밥",
+                "price": "2000",
+                "tag": false
+            }
+        ]
+    },
+
+    {
+        "name": "킹콩부대찌개",
+        "address": "서울특별시 관악구 신원로 59길 15-12",
+        "call": "0507-1404-8046",
+        "time": "매일 11:00 - 23:00",
+        "homepage": "http://www.kingkongbudae.co.kr",
+        "menus": [
+            {
+                "name": "킹콩부대찌개 2인분",
+                "price": "16000",
+                "tag": true
+            },
+            {
+                "name": "킹콩 왕돈까스",
+                "price": "8000",
+                "tag": false
+            }
+        ]
+    },
+
+    {
+        "name": "백암왕순대&왕냉면",
+        "address": "서울특별시 관악구 신원로 39",
+        "call": "02-876-8788",
+        "time": "매일 06:30 - 23:00",
+        "homepage": "https://map.naver.com/v5/search/%EB%B0%B1%EC%95%94%EC%99%95%EC%88%9C%EB%8C%80%20%EC%99%95%EB%83%89%EB%A9%B4/place/1377509210?c=14129234.1931154,4506655.5279800,15,0,0,0,dh",
+        "menus": [
+            {
+                "name": "순댓국",
+                "price": "7000",
+                "tag": true
+            },
+            {
+                "name": "물냉면",
+                "price": "7000",
+                "tag": false
+            }
+        ]
     }
   ]
