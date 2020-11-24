@@ -24,7 +24,7 @@ function List() {
             </div>
             <div className={"StoreDesc"}>
               <span className={"StoreName"}>{store.name}</span>
-              <div>
+              <div className={"TagContainer"}>
                 {store.menus.map((menu, index) => {
                   return index < 3 ? (
                     <span key={index} className={"StoreTag"}>

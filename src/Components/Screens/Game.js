@@ -8,12 +8,13 @@ import foodImg from "../../assets/images/game/toppokki.png";
 
 function Game() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [score, setScore] = useState(0);
+  const [score, setScore] = useState(1);
   let history = useHistory();
 
   const clickButtonHandle = (evt) => {
     const clickedText = evt.target.innerText;
     if (clickedText === gameData[currentIndex].answer) {
+      alert("정답입니다!");
       setScore(score + 1);
     }
 

@@ -8,7 +8,6 @@ function GameEnd() {
   const [score, setScore] = useState(0);
 
   useEffect(() => {
-    console.log(location.state.score);
     setScore(location.state.score);
   }, []);
 
