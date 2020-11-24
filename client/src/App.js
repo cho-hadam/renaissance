@@ -51,6 +51,7 @@ function App() {
     setMenuColor(currentMenu);
   }, []);
 
+  
   return (
     <Router>
       <Nav
