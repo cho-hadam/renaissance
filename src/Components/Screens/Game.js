@@ -8,7 +8,7 @@ import foodImg from "../../assets/images/game/toppokki.png";
 
 function Game() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [score, setScore] = useState(0);
+  const [score, setScore] = useState(1);
   let history = useHistory();
 
   const clickButtonHandle = (evt) => {
