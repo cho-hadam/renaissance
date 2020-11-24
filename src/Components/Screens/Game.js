@@ -14,6 +14,7 @@ function Game() {
   const clickButtonHandle = (evt) => {
     const clickedText = evt.target.innerText;
     if (clickedText === gameData[currentIndex].answer) {
+      alert("정답입니다!");
       setScore(score + 1);
     }
 
