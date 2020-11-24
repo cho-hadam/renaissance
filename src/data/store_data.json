@@ -15,6 +15,16 @@
                 "name": "리얼초콜릿라떼R",
                 "price": "5200",
                 "tag": false
+            },
+            {
+                "name": "초코악마빙수",
+                "price": "9800",
+                "tag": false
+            },
+            {
+                "name": "당근 치즈 케이크",
+                "price": "5900",
+                "tag": false
             }
         ]
     },
@@ -35,6 +45,21 @@
                 "name": "식혜",
                 "price": "3000",
                 "tag": false
+            },
+            {
+                "name": "깨끼떡",
+                "price": "2000",
+                "tag": false
+            },
+            {
+                "name": "꿀떡",
+                "price": "2000",
+                "tag": false
+            },
+            {
+                "name": "약식",
+                "price": "2000",
+                "tag": false
             }
         ]
     },
@@ -52,7 +77,17 @@
                 "tag": true
             },
             {
+                "name": "빨만두떡",
+                "price": "5000",
+                "tag": false
+            },
+            {
                 "name": "꼬마김밥",
+                "price": "3500",
+                "tag": false
+            },
+            {
+                "name": "치즈김밥",
                 "price": "3500",
                 "tag": false
             }
@@ -75,6 +110,11 @@
                 "name": "네모도시락",
                 "price": "4900",
                 "tag": false
+            },
+            {
+                "name": "계란찜",
+                "price": "3000",
+                "tag": false
             }
         ]
     },
@@ -94,6 +134,11 @@
             {
                 "name": "마왕볶음밥",
                 "price": "6000",
+                "tag": false
+            },
+            {
+                "name": "주먹밥",
+                "price": "3000",
                 "tag": false
             }
         ]
@@ -135,6 +180,16 @@
                 "name": "기쁨떡갈비팩",
                 "price": "10000",
                 "tag": false
+            },
+            {
+                "name": "행복떡갈비팩",
+                "price": "9000",
+                "tag": true
+            },
+            {
+                "name": "치킨윙",
+                "price": "4000",
+                "tag": false
             }
         ]
     },
@@ -155,6 +210,16 @@
                 "name": "육회 냉면",
                 "price": "8000",
                 "tag": false
+            },
+            {
+                "name": "육회비빔밥",
+                "price": "10000",
+                "tag": false
+            },
+            {
+                "name": "한우 육회",
+                "price": "20000",
+                "tag": false
             }
         ]
     },
@@ -172,8 +237,23 @@
                 "tag": true
             },
             {
+                "name": "튀김",
+                "price": "5000",
+                "tag": false
+            },
+            {
+                "name": "오뎅",
+                "price": "500",
+                "tag": false
+            },
+            {
                 "name": "참치김밥",
                 "price": "3000",
+                "tag": false
+            },
+            {
+                "name": "잔치국수",
+                "price": "4000",
                 "tag": false
             }
         ]
@@ -195,6 +275,16 @@
                 "name": "야채김밥",
                 "price": "2000",
                 "tag": false
+            },
+            {
+                "name": "오징어",
+                "price": "2000",
+                "tag": false
+            },
+            {
+                "name": "떡볶이",
+                "price": "2000",
+                "tag": false
             }
         ]
     },
@@ -207,13 +297,23 @@
         "homepage": "http://www.kingkongbudae.co.kr",
         "menus": [
             {
-                "name": "킹콩부대찌개 2인분",
+                "name": "킹콩부대찌개",
                 "price": "16000",
+                "tag": true
+            },
+            {
+                "name": "우삼겹부대찌개",
+                "price": "18000",
                 "tag": true
             },
             {
                 "name": "킹콩 왕돈까스",
                 "price": "8000",
+                "tag": false
+            },
+            {
+                "name": "감자튀김",
+                "price": "4000",
                 "tag": false
             }
         ]
@@ -232,10 +332,25 @@
                 "tag": true
             },
             {
+                "name": "내장탕",
+                "price": "8000",
+                "tag": true
+            },
+            {
+                "name": "술국",
+                "price": "15000",
+                "tag": true
+            },
+            {
                 "name": "물냉면",
                 "price": "7000",
                 "tag": false
-            }
+            },
+            {
+                "name": "슈육",
+                "price": "15000",
+                "tag": true
+            }            
         ]
     }
-  ]
+]
