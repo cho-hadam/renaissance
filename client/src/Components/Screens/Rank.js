@@ -39,6 +39,8 @@ function Rank() {
     });
   }, []);
 
+  
+
   return (
     <main id={"RankContainer"}>
       <div className={"TopRankContainer"}>
