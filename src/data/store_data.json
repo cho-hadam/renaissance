@@ -135,11 +135,6 @@
                 "name": "마왕볶음밥",
                 "price": "6000",
                 "tag": false
-            },
-            {
-                "name": "주먹밥",
-                "price": "3000",
-                "tag": false
             }
         ]
     },
@@ -268,7 +263,7 @@
         "menus": [
             {
                 "name": "탕수육",
-                "price": "3000~",
+                "price": "3000",
                 "tag": true
             },
             {
@@ -277,12 +272,7 @@
                 "tag": false
             },
             {
-                "name": "오징어",
-                "price": "2000",
-                "tag": false
-            },
-            {
-                "name": "떡볶이",
+                "name": "오징어튀김",
                 "price": "2000",
                 "tag": false
             }
@@ -347,7 +337,7 @@
                 "tag": false
             },
             {
-                "name": "슈육",
+                "name": "수육",
                 "price": "15000",
                 "tag": true
             }            
