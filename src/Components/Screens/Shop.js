@@ -105,7 +105,9 @@ function Shop() {
             <span>{shop.time}</span>
           </div>
         </div>
-        <button className={"BtnHomepage"}>Homepage</button>
+        <a className={"BtnHomepage"} href={shop.homepage} target={"_blank"}>
+          Homepage
+        </a>
       </div>
       <div className={"ShopRightContainer"}>
         {shop.menus.map((menu, index) => (
