@@ -41,6 +41,10 @@
 
 /* Button Homepage */
 .BtnHomepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 200px;
     height: 70px;
     margin-top: 70px;
@@ -55,6 +59,10 @@
     font-weight: bold;
 
     cursor: pointer;
+}
+
+.BtnHomepage:focus {
+    outline: none;
 }
 
 /* Menu Card */
