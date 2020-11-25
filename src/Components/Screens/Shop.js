@@ -14,7 +14,64 @@ import disabledNext from "../../assets/images/detail/next_disabled.png";
 import next from "../../assets/images/detail/next.png";
 
 // Menu Image
-import image1 from "../../assets/images/menu/coffee.png";
+import ajeossi1 from "../../assets/images/menu/ajeossi/chicken.png";
+
+import baegAm1 from "../../assets/images/menu/baeg-am/noodles.png";
+import baegAm2 from "../../assets/images/menu/baeg-am/soup.png";
+import baegAm3 from "../../assets/images/menu/baeg-am/suyug.png";
+
+import bunsig1 from "../../assets/images/menu/bunsig/fish-cake.png";
+import bunsig2 from "../../assets/images/menu/bunsig/kimbap.png";
+import bunsig3 from "../../assets/images/menu/bunsig/noodles.png";
+import bunsig4 from "../../assets/images/menu/bunsig/tempura.png";
+import bunsig5 from "../../assets/images/menu/bunsig/tteogbokki.png";
+
+import caffebene1 from "../../assets/images/menu/caffebene/cake.png";
+import caffebene2 from "../../assets/images/menu/caffebene/coffee.png";
+import caffebene3 from "../../assets/images/menu/caffebene/ice-cream.png";
+
+import gomo1 from "../../assets/images/menu/gomo/bibimbab.png";
+import gomo2 from "../../assets/images/menu/gomo/meat.png";
+import gomo3 from "../../assets/images/menu/gomo/noodles.png";
+
+import kingkong1 from "../../assets/images/menu/kingkong/fried.png";
+import kingkong2 from "../../assets/images/menu/kingkong/pork.png";
+import kingkong3 from "../../assets/images/menu/kingkong/stew.png";
+
+import maebdang1 from "../../assets/images/menu/maebdang/egg.png";
+import maebdang2 from "../../assets/images/menu/maebdang/fried-rice.png";
+import maebdang3 from "../../assets/images/menu/maebdang/galbijjim.png";
+
+import ricecake1 from "../../assets/images/menu/ricecake/sighye.png";
+import ricecake2 from "../../assets/images/menu/ricecake/tteok.png";
+
+import sinsali1 from "../../assets/images/menu/sinsali/fried-rice.png";
+import sinsali2 from "../../assets/images/menu/sinsali/tteogbokki.png";
+
+import tangsuyug1 from "../../assets/images/menu/tangsuyug/fried.png";
+import tangsuyug2 from "../../assets/images/menu/tangsuyug/kimbap.png";
+import tangsuyug3 from "../../assets/images/menu/tangsuyug/tangsuyug.png";
+
+import teumsae1 from "../../assets/images/menu/teumsae/kimbap.png";
+import teumsae2 from "../../assets/images/menu/teumsae/ramen.png";
+
+import tteoggalbi1 from "../../assets/images/menu/tteoggalbi/chicken.png";
+import tteoggalbi2 from "../../assets/images/menu/tteoggalbi/tteokgalbi.png";
+
+const images = [
+  [caffebene2, caffebene2, caffebene3, caffebene1],
+  [ricecake2, ricecake1, ricecake2, ricecake2],
+  [teumsae2, teumsae2, teumsae1, teumsae1],
+  [maebdang3, maebdang2, maebdang1],
+  [sinsali2, sinsali1],
+  [ajeossi1, ajeossi1],
+  [tteoggalbi2, tteoggalbi2, tteoggalbi2, tteoggalbi1],
+  [gomo3, gomo3, gomo1, gomo2],
+  [bunsig5, bunsig4, bunsig1, bunsig2, bunsig3],
+  [tangsuyug3, tangsuyug2, tangsuyug1],
+  [kingkong3, kingkong3, kingkong2, kingkong1],
+  [baegAm2, baegAm2, baegAm2, baegAm1, baegAm3],
+];
 
 function Shop() {
   const { id } = useParams();
@@ -65,7 +122,7 @@ function Shop() {
               alt={"back button"}
             />
             <div className={"MenuDetail"}>
-              <img src={image1} alt={menu.name} />
+              <img src={images[id][activeMenuIndex]} alt={menu.name} />
               <div className={"MenuName"}>
                 <span>{menu.name}</span>
                 {menu.tag ? (
