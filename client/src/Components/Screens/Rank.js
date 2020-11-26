@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import axios from 'axios';
 
 import "../../css/rank.css";
 
@@ -30,6 +31,22 @@ function RankItem(props) {
 }
 
 function Rank() {
+
+
+  const [user, setUser] = useState({})
+  useEffect(() => {
+    axios.get("http://localhost:5000/api/score")
+      .then((response) =>{
+        setUser(response.data);
+        console.log(user)
+      })
+      .catch((error) =>{
+        console.log(error);
+      })
+  }, [])
+  
+
+
   const [myRecord, setMyRecord] = useState({});
   useEffect(() => {
     setMyRecord({
@@ -39,9 +56,8 @@ function Rank() {
     });
   }, []);
 
-  
-
   return (
+    
     <main id={"RankContainer"}>
       <div className={"TopRankContainer"}>
         <TopRank image={SilverImage} rank={2} name={"백민세"} score={4210} />
@@ -67,4 +83,4 @@ function Rank() {
   );
 }
 
-export default Rank;
+export default Rank
