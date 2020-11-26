@@ -4,7 +4,7 @@
         "address": "서울특별시 관악구 남부순환로 1600-1",
         "call": "02-886-6232",
         "time": "매일 00:00 - 24:00",
-        "homepage": "http://www.instagram.com/caffebenesh",
+        "homepage": "https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EC%B9%B4%ED%8E%98%EB%B2%A0%EB%84%A4+%EC%8B%A0%EB%A6%BC%EC%97%AD%EC%A0%90&oquery=%EC%B9%B4%ED%8E%98%EB%B2%A0%EB%84%A4+%EC%8B%A0%EB%A6%BC%EC%A0%90&tqi=UJJttlp0YihssnmAaihssssssGV-177050",
         "menus": [
             {
                 "name": "아메리카노R",
@@ -53,11 +53,6 @@
             },
             {
                 "name": "꿀떡",
-                "price": "2000",
-                "tag": false
-            },
-            {
-                "name": "약식",
                 "price": "2000",
                 "tag": false
             }
@@ -134,11 +129,6 @@
             {
                 "name": "마왕볶음밥",
                 "price": "6000",
-                "tag": false
-            },
-            {
-                "name": "주먹밥",
-                "price": "3000",
                 "tag": false
             }
         ]
@@ -268,7 +258,7 @@
         "menus": [
             {
                 "name": "탕수육",
-                "price": "3000~",
+                "price": "3000",
                 "tag": true
             },
             {
@@ -277,12 +267,7 @@
                 "tag": false
             },
             {
-                "name": "오징어",
-                "price": "2000",
-                "tag": false
-            },
-            {
-                "name": "떡볶이",
+                "name": "오징어튀김",
                 "price": "2000",
                 "tag": false
             }
@@ -347,7 +332,7 @@
                 "tag": false
             },
             {
-                "name": "슈육",
+                "name": "수육",
                 "price": "15000",
                 "tag": true
             }            
