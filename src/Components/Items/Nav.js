@@ -4,7 +4,7 @@ import "../../css/nav.css";
 
 import { Link } from "react-router-dom";
 
-const menus = ["Home", "Game", "Rank", "List"];
+const menus = ["Home", "Game", "List"];
 
 function Nav(props) {
   const { color, currentMenu, backgroundColor, clickHandle } = props.setNav;
