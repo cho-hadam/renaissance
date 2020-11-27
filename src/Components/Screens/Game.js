@@ -34,14 +34,14 @@ const gameImages = [
 
 function Game() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [score, setScore] = useState(1);
+  const [score, setScore] = useState(250);
   let history = useHistory();
 
   const clickButtonHandle = (evt) => {
     const clickedText = evt.target.innerText;
     if (clickedText === gameData[currentIndex].answer) {
       alert("정답입니다!");
-      setScore(score + 1);
+      setScore(score + 250);
     } else {
       alert("틀렸습니다😥");
     }
