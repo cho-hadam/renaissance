@@ -3,4 +3,4 @@
    
 백민세, 오지민, 조하닮   
    
-🔗 [Web Site]<https://cho-hadam.github.io/Renaissance/>
+🔗 [Web Site](https://cho-hadam.github.io/Renaissance/)
