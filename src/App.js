@@ -54,11 +54,11 @@ function App() {
     <Router>
       <Nav
         setNav={{
-          color: color,
-          currentMenu: currentMenu,
-          backgroundColor: backgroundColor,
-          setMenuColor: setMenuColor,
-          clickHandle: clickHandle,
+          color,
+          currentMenu,
+          backgroundColor,
+          setMenuColor,
+          clickHandle,
         }}
       />
 
